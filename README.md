@@ -46,3 +46,31 @@ Test your new function; I've provided some basic testing code in `code.test.js`.
 What is the worst-case asymptotic time complexity of your implementation? What
 is the worst-case asymptotic memory complexity? Add your answer, including your
 reasoning, to this markdown file.
+
+## Answer 
+1. Total Subproblems:
+- This algorithm process:
+  -  All subsets of cities: $2^{n}$ subsets for $n$ cities.
+  -  All Starting cities: $n$ starting cities for each subset.
+     - Total subproblems complexity: $O(n \cdot 2^{n})$.
+2. Work Per Subproblem:
+- Key Generation:
+  - Sorting Cities: $O(n\log(n))$
+  - Joining Cities: $O(n)$.
+- Subset filtering:
+  - Removing the start city takes $O(n)$.
+- Recursive Calls
+  - Number of recursive calls: $n - 1$ calls for $n$ cities.
+  - Each call calculates the distance and updates the shortest path : $O(n)$.
+    - Total Work for recursive calls: $O(n^{2})$.
+3. Total Time complexity
+- Combining the total subproblems and work per subproblem:
+  - $O(n \cdot 2^{n}) \cdot O(n^{2}) = O(n^{2} \cdot 2^{n})$.
+4. The dominant factor is the recursive processing of all the subsets and starting cities.
+- This leads us to a worst-case time complexity of: $\Theta(n^{2} \cdot 2^{n})$. 
+
+
+
+
+
+
