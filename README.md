@@ -48,6 +48,7 @@ is the worst-case asymptotic memory complexity? Add your answer, including your
 reasoning, to this markdown file.
 
 ## Answer 
+Worse-case Asymptotic Time Comlexity
 1. Total Subproblems:
 - This algorithm process:
   -  All subsets of cities: $2^{n}$ subsets for $n$ cities.
@@ -67,9 +68,28 @@ reasoning, to this markdown file.
 - Combining the total subproblems and work per subproblem:
   - $O(n \cdot 2^{n}) \cdot O(n^{2}) = O(n^{2} \cdot 2^{n})$.
 4. The dominant factor is the recursive processing of all the subsets and starting cities.
-- This leads us to a worst-case time complexity of: $\Theta(n^{2} \cdot 2^{n})$. 
+- This leads us to a worst-case time complexity of: $\Theta(n^{2} \cdot 2^{n})$.
 
+Worse-case Asymtotic Memory Complexity 
 
+The cache is the most memory intensive component, as it grows exponentially with the number of cities. 
+- The number of keys is $2^{n}$.
+- For each possible starting city., there are $n \cdot 2^{n}$ keys.
+- Each key is a string of length $n$.
+- Leaving us with the worse case memory complexity of $\Theta(n^{2} \cdot 2^{n})$. 
+
+## Plagiarism Acknowledgement 
+This assignment was definitely difficult. I started by watching a few youtube videos first, trying to understand how the algorithms works. These videos definitly helped me understand the concept of the held-karp algorithm but didnt provide much for the implementation. 
+
+- https://www.youtube.com/watch?v=6jqlBDYNrL0&ab_channel=CSDoctorr
+- https://www.youtube.com/watch?v=GIF6f0XMIbk&ab_channel=AlgorithmsLab
+- https://www.youtube.com/watch?v=cY4HiiFHO1o&ab_channel=WilliamFiset
+
+Once I felt I had a pretty decent idea of the algorithm, I started working on my implementation using the pseudocode given. I 
+eventually ended up looking at a repository to help me complete the implementation. Some of the key points from the exmaple that helped me create my implementation where the memoization, key generation, and filtering remaining cities.
+In summary, the videos helped me understand the concept, the pseudocode provided the framework, and the repository assisted with the details of implementation. For the time comlexity and memory complexity I assentially just repeated the steps I have don for previous assugnments and applied them to this algorithm. 
+
+- https://github.com/COSC3020/tsp-held-karp-Dhruv8806/blob/main/code.js
 
 
 
