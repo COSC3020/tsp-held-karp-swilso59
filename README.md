@@ -87,7 +87,7 @@ This assignment was definitely difficult. I started by watching a few youtube vi
 
 Once I felt I had a pretty decent idea of the algorithm, I started working on my implementation using the pseudocode given. I 
 eventually ended up looking at a repository to help me complete the implementation. Some of the key points from the exmaple that helped me create my implementation where the memoization, key generation, and filtering remaining cities.
-In summary, the videos helped me understand the concept, the pseudocode provided the framework, and the repository assisted with the details of implementation. For the time comlexity and memory complexity I assentially just repeated the steps I have don for previous assugnments and applied them to this algorithm. 
+In summary, the videos helped me understand the concept, the pseudocode provided the format, and the repository assisted with the details of implementation. For the time and memory complexity I essentially repeated the steps I have done in previous assignments and applied them to this algorithm. 
 
 - https://github.com/COSC3020/tsp-held-karp-Dhruv8806/blob/main/code.js
 
